@@ -14,18 +14,15 @@ tools  モデルやAugmentationのツール群
 入力想定:  
 dataset  
 -- rat  
-   -- diabetes  
-      -- kidney_1  
-        -- glo_1.jpg  
-   -- not-diabetes  
+    -- diabetes  
+        -- kidney_1  
+            -- glo_1.jpg  
+    -- not-diabetes  
 
 ## 使用方法
 特徴学習  
-python encoder_localize_aug.py --exp 0 --seed 42 --out-path results
+python encoder_localize_aug.py --exp 0 --seed 42 --out-path results  
 クラスタリング  
 python clustering.py --exp 0 --allepoch 30  
 可視化  
-python visualize.py --exp 0 --out-path results --target-clusters top10 --skip-existing
-
-
-
+python visualize.py --exp 0 --out-path results --target-clusters top10 --skip-existing  
